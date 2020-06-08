@@ -1,0 +1,45 @@
+.archive {
+
+  .page-header {
+    //text-align: center;
+  }
+
+  .archive-description {
+    margin-bottom: 40px;
+  }
+
+  .archive-image {
+    width: 100%;
+    height: auto;
+  }
+
+  h3.entry-title {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: $headers-font-family;
+
+    a {
+      color: $link-dark;
+
+      &:hover, &:focus {
+        color: $link-dark;
+      }
+    }
+  }
+
+  &.grid {
+    font-family: $card-font-family;
+
+    .grid_item {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      margin: 0;
+
+      li {
+        font-size: 15px;
+      }
+    }
+  }
+}

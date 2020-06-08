@@ -1,0 +1,74 @@
+@import "variables/variables";
+@import "mixins/custom_mixins";
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
+
+//@import '~foundation-sites/scss/vendor/normalize';
+//@import "~foundation-sites/scss/foundation";
+//@import "plugins/foundation-settings";
+
+@import "foundation";
+@include foundation-everything();
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+// @import "~some-node-module";
+
+// Fancybox
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
+
+// Import Slick
+//@import "~slick-carousel/slick/slick.scss";
+//@import "~slick-carousel/slick/slick-theme.scss";
+
+// Import Swiper
+//@import "~swiper/src/swiper.scss";
+
+// Import Owl carousel
+// @import "~owl-carousel/owl-carousel/owl.carousel.css";
+// @import "~owl-carousel/owl-carousel/owl.theme.css";
+// @import "~owl-carousel/owl-carousel/owl.transitions.css";
+@import "~owl.carousel/src/scss/owl.carousel.scss";
+@import "~owl.carousel/src/scss/owl.theme.default.scss";
+
+// Bootstrap 4 Grid
+//@import "~bootstrap-4-grid/scss/grid.scss";
+
+// MBurger CSS
+@import "~mburger-css/dist/mburger.css";
+
+/** Import theme styles */
+@import "common/fonts";
+@import "common/global";
+@import "common/buttons";
+@import "common/typography";
+@import "common/images";
+@import "plugins/fancybox";
+//@import "plugins/slick";
+//@import "plugins/swiper";
+@import "plugins/owl-carousel";
+//@import "plugins/semantic";
+@import "components/breadcrumbs";
+@import "components/arrows";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/navigation";
+@import "components/pagination";
+@import "components/states";
+@import "components/tabs";
+@import "components/wp-classes";
+@import "layouts/container";
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/works";
+@import "layouts/archive";
+@import "layouts/tinymce";

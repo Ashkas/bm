@@ -1,0 +1,115 @@
+@import "typography_variables";
+
+:root {
+
+
+  // for Mburger from mmenu
+  // https://mmenujs.com/mburger/docs.html
+  --mb-button-size: 44px;
+  --mb-bar-spacing: 4px;
+  --mb-bar-height: 2px;
+  --mb-bar-width: 0.5;
+
+}
+
+/** Colors */
+$color-black: #282828;
+$color-white: #ffffff;
+$color-grey-lightest: #fafafa;
+$color-grey-lighter: #f8f8f8;
+$color-grey-light: #efefef;
+$color-grey-mid: #aaaaaa;
+$color-grey-dark: #666666;
+$color-blue: #004a7c;
+
+$brand-primary: $color-blue;
+$brand-primary-light: lighten($brand-primary, 15%);
+$body-bg: #efefef;
+$content-bg: $color-white;
+
+$link-colour: $brand-primary;
+$link-hover: lighten($link-colour, 15%);
+
+/** Box Model  */
+$spacer:                2rem;
+
+// Links
+$link: $brand-primary;
+$link-hover: $color-black;
+$link-dark: $color-black;
+$link-dark-hover: $brand-primary;
+$link-light: $color-white;
+$link-white-hover: $brand-primary;
+
+// Separator
+$separator-color: $color-grey-lighter;
+
+// Backgrounds
+$content-bg: $color-white;
+
+// Paddings / Margins
+$margin-0-5: 5px;
+$margin-1: 10px;
+$margin-2: 20px;
+$margin-3: 24px;
+$margin-4: 30px;
+$margin-5: 40px;
+$margin-6: 50px;
+$margin-7: 60px;
+$margin-8: 80px;
+$padding-0-5: 5px;
+$padding-1: 10px;
+$padding-2: 20px;
+$padding-3: 24px;
+$padding-4: 30px;
+$padding-5: 40px;
+$padding-6: 50px;
+$padding-7: 60px;
+$padding-8: 80px;
+
+
+// buttons
+$button-bg-std: $color-black;
+$button-bg-std-hover: $brand-primary;
+$button-color-std: $color-white;
+$button-color-std-hover: $color-white;
+$button-bg-light: $color-grey-light;
+$button-bg-light-hover: $brand-primary;
+$button-color-light: $brand-primary;
+$button-color-light-hover: $color-white;
+
+//Icons
+$icon-font-size: 24px;
+$icon-close-font-size: 32px;
+
+// Header
+$header-bg: $content-bg;
+
+// Pagination
+$pagination-link: $color-grey-mid;
+$pagination-link-icon: $color-black;
+$pagination-link-hover: $brand-primary;
+$pagination-link-active: $color-black;
+
+// Slick carousel
+/* sage/assets/styles/common/_variables.scss */
+// Slick Carousel font path
+//$slick-font-path: "~slick-carousel/slick/fonts/";
+
+// Slick Carousel ajax-loader.gif path
+$slick-loader-path: "~slick-carousel/slick/";
+
+//== Breadcrumbs
+//
+//##
+
+$breadcrumb-padding-vertical:   8px !default;
+$breadcrumb-padding-horizontal: 15px !default;
+//** Breadcrumb background color
+$breadcrumb-bg:                none !default;
+//** Breadcrumb text color
+$breadcrumb-color:              #ccc !default;
+//** Text color of current page in the breadcrumb
+$breadcrumb-active-color:       $color-grey-dark !default;
+//** Textual separator for between breadcrumb elements
+$breadcrumb-separator:          "/" !default;

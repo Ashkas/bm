@@ -1,0 +1,43 @@
+.arrow-down {
+  position: relative;
+  text-align: center;
+  padding: 0;
+  margin: 10px 5px 0 0;
+  height: 12px;
+  width: 12px;
+
+  &:before, &:after {
+    transition: transform 350ms;
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 20%;
+    background: #282828;
+  }
+
+  &:before {
+    width: 51%;
+    left: 0;
+    transform: skew(0deg, 45deg);
+  }
+
+  &:after {
+    width: 50%;
+    right: 0;
+    transform: skew(0deg, -45deg);
+  }
+}
+
+.active {
+
+  .arrow-down {
+
+    &:before {
+      transform: skew(0deg, -45deg);
+    }
+
+    &:after {
+      transform: skew(0deg, 45deg);
+    }
+  }
+}

@@ -1,0 +1,125 @@
+
+
+.site-header {
+  font-family: $headers-font-family;
+  margin-bottom: 0px !important;
+  background: $header-bg;
+  // box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border-bottom: 3px solid get-color(primary);
+
+  // .header-border {
+  //   border-bottom: 1px solid #f8f8f8;
+  //   //margin-bottom: .625rem;
+  //   //padding-bottom: .625rem;
+  // }
+  .top-bar {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @include breakpoint(large) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+  .site-title {
+
+    h1, .h1 {
+      margin: 0;
+      line-height: 20px;
+      font-size: 24px;
+      font-weight: 600;
+
+      @include breakpoint(large) {
+        font-size: 32px;
+      }
+
+      .logo {
+        color: #282828;
+      }
+    }
+
+    .subheader {
+      font-size: 12px;
+      margin-top: 6px;
+      display: block;
+      line-height: 1;
+      margin-bottom: 0;
+
+      @include breakpoint(medium) {
+        font-size: 14px;
+      }
+
+      .text {
+        font-weight: 500;
+      }
+
+      .site_author {
+        @include breakpoint(large only) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  // hide the screen reader text
+  .mburger {
+    span {
+      display: block;
+      text-indent: -9999px;
+    }
+  }
+
+  .nav-primary {
+    font-family: $headers-font-family;
+    justify-content: flex-end;
+
+    .menu  {
+
+      @include breakpoint(large down) {
+        height: 100%;
+      }
+
+      .menu-item {
+        font-weight: 500;
+        font-family: $nav-font-family;
+        font-size: 21px;
+
+        @include breakpoint(large) {
+          text-transform: uppercase;
+          font-size: 14px;
+        }
+
+        @include breakpoint(xlarge) {
+          font-size: 15px;
+        }
+
+        a {
+          color: $color-black;
+
+            &:hover, &:focus {
+              color: $menu-item-color-hover;
+
+              @include breakpoint(large) {
+                background: get-color(muted);
+              }
+            }
+        }
+
+        &.active {
+          color: $menu-item-color-active;
+        }
+
+        &.menu-item-icon {
+          display: none;
+
+          @include breakpoint(large) {
+            display: block;
+            font-size: 18px;
+            margin-top: -2px;
+          }
+        }
+      }
+    }
+  }
+}

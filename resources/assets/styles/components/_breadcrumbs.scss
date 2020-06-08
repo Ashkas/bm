@@ -1,0 +1,51 @@
+.breadcrumb-wrapper {
+  padding: 5px 0px 5px;
+  margin-bottom: 10px;
+}
+
+.breadcrumbs {
+
+	padding: 0px 0px 5px;
+	border-bottom: 1px solid $color-grey-light;
+  margin: 0px;
+  font-family: $nav-font-family;
+
+	li {
+		list-style-type: none;
+		display: inline-block;
+		margin-right: 5px;
+		color: $color-grey-mid;
+		font-size: 14px;
+
+		a {
+			text-decoration: none;
+			color: $color-black;
+
+			&:hover, &:focus {
+				color: $color-blue;
+			}
+		}
+	}
+}
+
+.breadcrumb {
+  padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: $breadcrumb-bg;
+  border-radius: 0px;
+
+  > li {
+    display: inline-block;
+
+    + li:before {
+      content: "#{$breadcrumb-separator}\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+      padding: 0 5px;
+      color: $breadcrumb-color;
+    }
+  }
+
+  > .active {
+    color: $breadcrumb-active-color;
+  }
+}

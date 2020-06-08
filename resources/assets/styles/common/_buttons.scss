@@ -1,0 +1,31 @@
+.button {
+  color: $button-color-std;
+  background: $button-bg-std;
+  transition: all 350ms ease;
+  height: rem-calc(40);
+  line-height: rem-calc(40);
+  text-transform: uppercase;
+  font-size: 15px !important;
+  padding: 0 rem-calc(10);
+  border: none;
+
+  &:hover, &:focus {
+    color: $button-color-std-hover;
+    background: $button-bg-std-hover;
+  }
+}
+
+.button.work-overlay-button {
+  color: $button-color-light;
+  background: $button-bg-light;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  height: rem-calc(50);
+  line-height: rem-calc(50);
+
+  &:hover, &focus {
+    color: $button-color-light-hover;
+    background: $button-bg-light-hover;
+  }
+}

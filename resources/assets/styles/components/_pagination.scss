@@ -1,0 +1,117 @@
+.work_pagination {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #efefef;
+
+  .ui.grid > .row {
+    padding: 0.5rem 0;
+  }
+
+  .previous, .next {
+    font-size: 12px;
+    // color: $brand-primary;
+    // transition: color 350ms ease;
+
+    // &:hover, &:focus {
+    //   color: $brand-primary-light;
+    // }
+  }
+}
+
+/* ------------------------------------------------------ Pagination */
+
+.pagination {
+
+	font-family: $nav-font-family;
+	text-transform: uppercase;
+	line-height: rem-calc(50);
+	height: rem-calc(50);
+	text-align: center;
+	border-radius: 0px;
+	display: block;
+	border-top: 1px solid $separator-color;
+	padding-top: rem-calc(15);
+	margin-top: rem-calc(10);
+
+	.nav_text {
+		vertical-align: top;
+		line-height: rem-calc(28);
+	}
+
+	[class^="icon-"], [class*=" icon-"] {
+
+		font-size: rem-calc(30);
+		height: rem-calc(22);
+    display: inline-block;
+    vertical-align: super;
+    height: rem-calc(30);
+    line-height: rem-calc(30);
+	}
+
+	a {
+		color: $pagination-link;
+		text-decoration: none;
+		cursor: pointer;
+
+		[class^="icon-"], [class*=" icon-"] {
+			color: $pagination-link-icon;
+		}
+	}
+
+	a:hover, a:focus {
+		color: $pagination-link-hover;
+		text-decoration: none;
+
+		[class^="icon-"], [class*=" icon-"] {
+			color: $pagination-link-hover;
+		}
+	}
+
+	.inactive, .page-numbers {
+		display: inline-block;
+		width: rem-calc(15);
+    margin-right: rem-calc(8);
+    vertical-align: super;
+    height: rem-calc(30);
+    line-height: rem-calc(30);
+
+		&:last-child {
+			margin-right: 0px;
+		}
+
+	}
+
+	.current {
+		color: $pagination-link-active;
+    cursor: text;
+    border-bottom: 2px solid $brand-primary;
+	}
+
+	.pagination_arrows {
+		display: inline-block;
+		margin-right: rem-calc(5);
+		width: rem-calc(5);
+    text-align: center;
+    vertical-align: super;
+    height: rem-calc(30);
+    line-height: rem-calc(30);
+	}
+
+	.previous {
+		float: left;
+
+		&.page-numbers {
+			width: rem-calc(20);
+		}
+	}
+
+	.next {
+		float: right;
+
+		&.page-numbers {
+			margin-right: 0;
+			width: rem-calc(20);
+		}
+	}
+}
+

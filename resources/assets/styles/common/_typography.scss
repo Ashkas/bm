@@ -1,0 +1,67 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $headers-font-family;
+}
+
+a {
+  color: $brand-primary;
+  transition: color 350ms ease;
+
+  &:hover, &:focus {
+    color: $brand-primary-light;
+  }
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 1.4285em; // set the same as the line-height for readmore.js
+}
+
+.lead p, p.lead {
+  font-size: 17px;
+}
+
+dl {
+  margin: 0;
+
+  dt {
+    font-family: $headers-font-family;
+    //text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    font-size: $label-font-size;
+  }
+  dd {
+    margin: 0;
+    font-size: 16px;
+  }
+}
+
+ul {
+
+  &.no_bullets {
+    padding-left: 0;
+    list-style-type: none;
+  }
+}
+
+blockquote {
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #666666;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}

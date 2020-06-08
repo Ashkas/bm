@@ -1,0 +1,60 @@
+.states {
+
+  margin-bottom: $margin-3;
+  padding-bottom: $margin-3;
+  border-bottom: 1px solid $separator-color;
+
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .states-content {
+
+    &.with-image {
+      @include breakpoint(medium) {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+      }
+
+      .states-content-image {
+
+        img {
+          display: block;
+
+          @include breakpoint(medium down) {
+            margin: 0 auto $margin-3;
+            width: auto;
+            max-width: 300px;
+          }
+
+          @include breakpoint(medium) {
+            margin: 0 $margin-3 0 0;
+            width: 200px;
+            height: auto;
+            display: block;
+            max-width: none;
+          }
+        }
+
+      }
+    }
+
+    .states-content-meta {
+
+      p {
+        margin-bottom: $margin-1;
+
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
+
+        b {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
