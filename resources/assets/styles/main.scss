@@ -22,9 +22,6 @@
 // Fancybox
 @import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
 
-// Import Slick
-//@import "~slick-carousel/slick/slick.scss";
-//@import "~slick-carousel/slick/slick-theme.scss";
 
 // Import Swiper
 //@import "~swiper/src/swiper.scss";
@@ -33,11 +30,10 @@
 // @import "~owl-carousel/owl-carousel/owl.carousel.css";
 // @import "~owl-carousel/owl-carousel/owl.theme.css";
 // @import "~owl-carousel/owl-carousel/owl.transitions.css";
-@import "~owl.carousel/src/scss/owl.carousel.scss";
-@import "~owl.carousel/src/scss/owl.theme.default.scss";
-
-// Bootstrap 4 Grid
-//@import "~bootstrap-4-grid/scss/grid.scss";
+// @import "~owl.carousel/src/scss/owl.carousel.scss";
+// @import "~owl.carousel/src/scss/owl.theme.default.scss";
+@import "~owl.carousel/dist/assets/owl.carousel.css";
+@import "~owl.carousel/dist/assets/owl.theme.default.css";
 
 // MBurger CSS
 @import "~mburger-css/dist/mburger.css";

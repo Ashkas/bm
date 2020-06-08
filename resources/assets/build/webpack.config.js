@@ -2,7 +2,7 @@
 
 const webpack = require('webpack');
 const merge = require('webpack-merge');
-const CleanPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const CopyGlobsPlugin = require('copy-globs-webpack-plugin');
@@ -53,10 +53,14 @@ let webpackConfig = {
       {
         test: /\.js$/,
         exclude: [/node_modules(?![/|\\](bootstrap|foundation-sites))/],
-        use: [
-          { loader: 'cache' },
-          { loader: 'buble', options: { objectAssign: 'Object.assign' } },
-        ],
+        use: {
+          loader: 'cache',
+          //{ loader: 'buble', options: { objectAssign: 'Object.assign' } },
+          loader: 'babel-loader',
+          options: {
+            presets: ['env']
+          },
+        },
       },
       {
         test: /\.css$/,
@@ -89,7 +93,7 @@ let webpackConfig = {
                 sourceMap: config.enabled.sourceMaps,
               },
             },
-            { loader: 'resolve-url', options: { sourceMap: config.enabled.sourceMaps } },
+            { loader: 'resolve-url', options: { sourceMap: config.enabled.sourceMaps, engine: "rework" } },
             {
               loader: 'sass', options: {
                 sourceMap: config.enabled.sourceMaps,
@@ -132,9 +136,14 @@ let webpackConfig = {
   },
   externals: {
     jquery: 'jQuery',
+    foundation: 'Foundation'
   },
   plugins: [
-    new CleanPlugin([config.paths.dist], {
+    // new CleanWebpackPlugin([config.paths.dist], {
+    //   root: config.paths.root,
+    //   verbose: false,
+    // }),
+    new CleanWebpackPlugin({
       root: config.paths.root,
       verbose: false,
     }),

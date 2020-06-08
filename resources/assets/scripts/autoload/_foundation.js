@@ -1,17 +1,28 @@
-//import '../../../../resources/semantic/dist/semantic.min';
-//import '../../../../resources/semantic/dist/semantic.min';
+// // jQuery
+// var $ = require('jquery');
+// global.jQuery = $;
 
-var $ = require('jquery');
-global.jQuery = $;
+// // if you want all features of foundation
+// require('./node_modules/foundation-sites/dist/foundation.js');
 
-// import Foundation from '/./././node_modules/foundation-sites/js/foundation';
-// import Accordion from '/./././node_modules/foundation-sites/js/foundation.accordion';
+// // if you want only some features
+// // require('./node_modules/what-input/what-input');
+// // require('./node_modules/foundation-sites/js/foundation.core');
+// // require('./node_modules/foundation-sites/js/....');
+
+// export default Foundation;
+
+// var $ = require('jquery');
+// global.jQuery = $;
+
+// import Foundation from './foundation-sites/js/foundation';
+// import Accordion from '/foundation-sites/js/foundation.accordion';
 // Foundation.addToJquery($);
 
-import { foundation } from 'foundation-sites/js/foundation.core';
-import 'foundation-sites/js/foundation.util.mediaQuery';
+// import { foundation } from 'foundation-sites/js/foundation.core';
+// import 'foundation-sites/js/foundation.util.mediaQuery';
 
-$.fn.foundation = foundation;
+// $.fn.foundation = foundation;
 
 // export { Foundation as Core }       from '/foundation-sites/js/foundation.core';
 // import * as CoreUtils               from '/foundation-sites/js/foundation.core.utils';

@@ -16,10 +16,6 @@ import 'readmore-js/readmore.js';
 
 export default {
   init() {
-
-    // call foundation
-
-    $(document).foundation()
     //var test = new Foundation.Accordion($('.tabs'));
 
 		//$.fancybox.defaults.hash = false;

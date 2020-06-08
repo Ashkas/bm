@@ -1,0 +1,62 @@
+
+> fsevents@1.2.9 install /Applications/MAMP/htdocs/bm/wp-content/themes/bm/node_modules/fsevents
+> node install
+
+[fsevents] Success: "/Applications/MAMP/htdocs/bm/wp-content/themes/bm/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64/fse.node" is installed via remote
+
+> node-sass@4.14.1 install /Applications/MAMP/htdocs/bm/wp-content/themes/bm/node_modules/node-sass
+> node scripts/install.js
+
+Cached binary found at /Users/Ashkas/.npm/node-sass/4.14.1/darwin-x64-64_binding.node
+
+> core-js@2.6.11 postinstall /Applications/MAMP/htdocs/bm/wp-content/themes/bm/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> mozjpeg@7.0.0 postinstall /Applications/MAMP/htdocs/bm/wp-content/themes/bm/node_modules/mozjpeg
+> node lib/install.js
+
+
+> gifsicle@4.0.1 postinstall /Applications/MAMP/htdocs/bm/wp-content/themes/bm/node_modules/gifsicle
+> node lib/install.js
+
+
+> jpegtran-bin@4.0.0 postinstall /Applications/MAMP/htdocs/bm/wp-content/themes/bm/node_modules/jpegtran-bin
+> node lib/install.js
+
+
+> optipng-bin@5.1.0 postinstall /Applications/MAMP/htdocs/bm/wp-content/themes/bm/node_modules/optipng-bin
+> node lib/install.js
+
+
+> pngquant-bin@5.0.2 postinstall /Applications/MAMP/htdocs/bm/wp-content/themes/bm/node_modules/pngquant-bin
+> node lib/install.js
+
+
+> node-sass@4.14.1 postinstall /Applications/MAMP/htdocs/bm/wp-content/themes/bm/node_modules/node-sass
+> node scripts/build.js
+
+Binary found at /Applications/MAMP/htdocs/bm/wp-content/themes/bm/node_modules/node-sass/vendor/darwin-x64-64/binding.node
+Testing binary
+Binary is fine
+
+> swiper@5.4.2 postinstall /Applications/MAMP/htdocs/bm/wp-content/themes/bm/node_modules/swiper
+> echo "[35m[1mLove Swiper? Support Vladimir's work by donating or pledging on patreon:[22m[39m
+ > [32mhttps://patreon.com/vladimirkharlampidi[0m
+"
+
+[35m[1mLove Swiper? Support Vladimir's work by donating or pledging on patreon:[22m[39m
+ > [32mhttps://patreon.com/vladimirkharlampidi[0m
+
++ what-input@5.2.10
+added 733 packages from 149 contributors, removed 275 packages, updated 1468 packages and audited 2202 packages in 57.264s
+found 13 vulnerabilities (11 low, 1 moderate, 1 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
